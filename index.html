@@ -1,89 +1,89 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <title>Campus Insight Engine</title>
-  <link rel="stylesheet" href="style.css">
+  <title>College Feedback System</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f5f5;
+      text-align: center;
+    }
+
+    .container {
+      width: 350px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      margin-top: 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    input, select, textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    img {
+      margin-bottom: 10px;
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <!-- College Header -->
+  <div class="container">
 
-  <div class="header">
-    <img src="C:\Users\priya\Downloads\cahcet_in_logo.jpg" class="logo">
-    <h1><b>C. Abdul Hakeem College of Engineering and Technology</b></h1>
+    <!-- 🔥 LOGO (image file same folder la irukanum) -->
+    <img src="C:\Users\priya\Downloads\cahcet_in_logo.jpg" width="80">
+
+    <h2>College Feedback System</h2>
+
+    <form id="feedbackForm">
+
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <select id="department" required>
+        <option value="">Select Department</option>
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+      </select>
+
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Canteen">Canteen</option>
+        <option value="Library">Library</option>
+        <option value="Lab">Lab</option>
+        <option value="Classroom">Classroom</option>
+      </select>
+
+      <textarea id="feedback" placeholder="Enter your feedback" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+
+    </form>
+
   </div>
 
-  <h2>🎓 Campus Insight Engine</h2>
-
-  <form id="feedbackForm">
-
-```
-<input type="text" id="name" placeholder="👤 Your Name (Optional)">
-
-<select id="department" required>
-  <option value="">🎓 Select Department</option>
-  <option>CSE</option>
-  <option>IT</option>
-  <option>AIDS</option>
-  <option>ECE</option>
-  <option>EEE</option>
-  <option>MECH</option>
-  <option>CIVIL</option>
-  <option>MBA</option>
-  <option>MCA</option>
-</select>
-
-<select id="category">
-  <option>🍽️ Canteen</option>
-  <option>🧪 Laboratory</option>
-  <option>👨‍🏫 Faculty</option>
-  <option>📚 Library</option>
-  <option>🚌 College Bus</option>
-  <option>🏠 Hostel</option>
-  <option>🏫 Classroom</option>
-  <option>💻 Computer Lab</option>
-  <option>⚡ Infrastructure</option>
-</select>
-
-<input type="number" id="rating" min="1" max="5" placeholder="⭐ Rating (1-5)" required>
-
-<textarea id="comment" placeholder="💬 Write your feedback..."></textarea>
-
-<button type="submit">🚀 Submit Feedback</button>
-```
-
-  </form>
-
-  <!-- Firebase SDK -->
-
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyDNG01aHZGaQuHZ8DfZKQvd43kF00M54Y",
-      authDomain: "campus-insight-engine.firebaseapp.com",
-      databaseURL: "https://campus-insight-engine-default-rtdb.firebaseio.com",
-      projectId: "campus-insight-engine",
-      storageBucket: "campus-insight-engine.firebasestorage.app",
-      messagingSenderId: "31784098288",
-      appId: "1:31784098288:web:c97e5d8b4526eee603e535"
-    };
-
-    firebase.initializeApp(firebaseConfig);
-
-    // 🔥 THIS IS IMPORTANT
-    const db = firebase.database();
-  </script>
-
-  <!-- Your Script -->
-
+  <!-- 🔥 JS connect -->
   <script src="script.js"></script>
 
 </body>
 </html>
-
-
