@@ -1,5 +1,5 @@
 const form = document.getElementById("feedbackForm");
-
+console.log("JS WORKING");
 form.addEventListener("submit", function(e) {
   e.preventDefault();
 
