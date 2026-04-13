@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>College Feedback System</title>
+  <title>Campus Insight Engine</title>
 
   <style>
     body {
       font-family: Arial;
-      background: #f5f5f5;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      margin: 0;
+      padding: 0;
       text-align: center;
+      color: white;
     }
 
     .container {
@@ -15,15 +18,30 @@
       margin: auto;
       background: white;
       padding: 20px;
-      margin-top: 50px;
+      margin-top: 80px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      color: black;
+    }
+
+    .header {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header img {
+      width: 50px;
     }
 
     input, select, textarea {
       width: 90%;
       padding: 10px;
       margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
 
     button {
@@ -32,14 +50,11 @@
       color: white;
       border: none;
       cursor: pointer;
+      border-radius: 5px;
     }
 
     button:hover {
       background: #0056b3;
-    }
-
-    img {
-      margin-bottom: 10px;
     }
   </style>
 
@@ -47,12 +62,13 @@
 
 <body>
 
+  <!-- 🔥 HEADER WITH LOGO -->
+  <div class="header">
+    <img src="C:\Users\priya\Downloads\cahcet_in_logo.jpg">
+    <h2>Campus Insight Engine</h2>
+  </div>
+
   <div class="container">
-
-    <!-- 🔥 LOGO (image file same folder la irukanum) -->
-    <img src="C:\Users\priya\Downloads\cahcet_in_logo.jpg" width="80">
-
-    <h2>College Feedback System</h2>
 
     <form id="feedbackForm">
 
@@ -72,6 +88,8 @@
         <option value="Library">Library</option>
         <option value="Lab">Lab</option>
         <option value="Classroom">Classroom</option>
+        <option value="Transport">Transport</option>
+        <option value="Hostel">Hostel</option>
       </select>
 
       <textarea id="feedback" placeholder="Enter your feedback" required></textarea>
@@ -82,7 +100,7 @@
 
   </div>
 
-  <!-- 🔥 JS connect -->
+  <!-- 🔥 JS CONNECT -->
   <script src="script.js"></script>
 
 </body>
