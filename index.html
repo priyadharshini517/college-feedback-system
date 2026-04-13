@@ -13,27 +13,23 @@
       color: white;
     }
 
+    .header {
+      margin-top: 20px;
+    }
+
+    .header img {
+      width: 60px;
+    }
+
     .container {
       width: 350px;
       margin: auto;
       background: white;
       padding: 20px;
-      margin-top: 80px;
+      margin-top: 40px;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
       color: black;
-    }
-
-    .header {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .header img {
-      width: 50px;
     }
 
     input, select, textarea {
@@ -62,12 +58,22 @@
 
 <body>
 
-  <!-- 🔥 HEADER WITH LOGO -->
+  <!-- 🔥 HEADER -->
   <div class="header">
+
     <img src="C:\Users\priya\Downloads\cahcet_in_logo.jpg">
-    <h2>Campus Insight Engine</h2>
+
+    <h1 style="margin:5px 0; font-weight:bold;">
+      C. Abdul Hakeem College of Engineering and Technology
+    </h1>
+
+    <h3 style="margin:0;">
+      Campus Insight Engine
+    </h3>
+
   </div>
 
+  <!-- 🔥 FORM -->
   <div class="container">
 
     <form id="feedbackForm">
@@ -80,6 +86,8 @@
         <option value="IT">IT</option>
         <option value="ECE">ECE</option>
         <option value="EEE">EEE</option>
+        <option value="MECH">MECH</option>
+        <option value="CIVIL">CIVIL</option>
       </select>
 
       <select id="category" required>
@@ -90,6 +98,7 @@
         <option value="Classroom">Classroom</option>
         <option value="Transport">Transport</option>
         <option value="Hostel">Hostel</option>
+        <option value="Teaching">Teaching</option>
       </select>
 
       <textarea id="feedback" placeholder="Enter your feedback" required></textarea>
